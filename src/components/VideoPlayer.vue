@@ -39,7 +39,8 @@ let videos = [
     title: '18-core iMac Pro Review: Not a Trap!',
     thumbnail:
       'https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA',
-    youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?rel=0,&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
+    youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
+    // https://youtu.be/3n1T3HxHd7Y?t=8 <iframe width="956" height="375" src="https://www.youtube.com/embed/3n1T3HxHd7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   },
   {
     id: 2,
