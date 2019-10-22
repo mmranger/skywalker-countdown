@@ -9,6 +9,12 @@
     <div class="time">
       {{ hours | beautify }}
       <div class="time__mode">
+        Hours
+      </div>
+    </div>
+    <div class="time">
+      {{ minutes | beautify }}
+      <div class="time__mode">
         Minutes
       </div>
     </div>
