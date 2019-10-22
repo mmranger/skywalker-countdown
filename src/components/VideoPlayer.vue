@@ -2,7 +2,10 @@
   <div class="container">
     <div class="container-gradient">
       <div class="video-player">
-        <timer date-props="December 20, 2019"></timer>
+         <!-- The Mandalorian release date -->
+        <timer date-props="November 12, 2019"></timer>
+         <!-- Rise of Skywalker release date -->
+        <!-- <timer date-props="December 20, 2019"></timer> -->
         <div class="video-container">
           <iframe width="1400" height="800" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay=yes; encrypted-media" allowfullscreen></iframe>
         </div>
@@ -39,15 +42,10 @@ let videos = [
     title: '18-core iMac Pro Review: Not a Trap!',
     thumbnail:
       'https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA',
-    youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
-    // https://youtu.be/3n1T3HxHd7Y?t=8 <iframe width="956" height="375" src="https://www.youtube.com/embed/3n1T3HxHd7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  },
-  {
-    id: 2,
-    title: '18-core iMac Pro Review: Not a Trap!',
-    thumbnail:
-      'https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA',
-    youtubeURL: 'https://www.youtube.com/embed/i6pbI9niN4k?rel=0,&autoplay=1&mute=1&loop=1&playlist=i6pbI9niN4k'
+    // Rise of Skywalker trailer 2
+    // youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y
+    // The Mandalorian trailer
+    youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
   }
 ]
 </script>
@@ -58,7 +56,7 @@ let videos = [
   }
   .container {
       width: 100%;
-      background: url('../assets/img/sw2.jpg') center center no-repeat;
+      background: url('../assets/img/disney.jpg') center center no-repeat;
       background-size: cover;
       background-color: #190206;
       height: 100vh;
