@@ -40,12 +40,12 @@ let videos = [
   {
     id: 1,
     title: '18-core iMac Pro Review: Not a Trap!',
-    thumbnail:
-      'https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA',
     // Rise of Skywalker trailer 2
     // youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y
+    // Rise of Skywalker trailer 3
+    youtubeURL: 'https://www.youtube.com/embed/nlnrOr2STaE?start=7&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
     // The Mandalorian trailer
-    youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
+    // youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
   }
 ]
 </script>
