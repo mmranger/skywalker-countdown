@@ -3,9 +3,9 @@
     <div class="container-gradient">
       <div class="video-player">
          <!-- The Mandalorian release date -->
-        <timer date-props="November 12, 2019"></timer>
+        <!-- <timer date-props={{ calculateCountdownDay() }}></timer> -->
          <!-- Rise of Skywalker release date -->
-        <!-- <timer date-props="December 20, 2019"></timer> -->
+        <timer></timer>
         <div class="video-container">
           <!-- <video ref="videoPlayer" class="video-js"></video> -->
           <!-- <vue-core-video-player src="../assets/rise-of-skywalker-1080p.mp4"></vue-core-video-player> -->
@@ -66,10 +66,10 @@ let videos = [
     // Rise of Skywalker trailer 2
     // youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y
     // Rise of Skywalker trailer 3
-    youtubeURL: 'https://www.youtube.com/embed/nlnrOr2STaE?start=7&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
+    // youtubeURL: 'https://www.youtube.com/embed/nlnrOr2STaE?start=7&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
     // youtubeURL: '../assets/rise-of-skywalker-1080p.mp4'
     // The Mandalorian trailer
-    // youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
+    youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
   }
 ]
 </script>
