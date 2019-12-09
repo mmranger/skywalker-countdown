@@ -15,43 +15,43 @@
 </template>
 
 <script>
-  import Timer from './timer.vue';
-  export default {
-    name: 'VideoPlayer',
-    data () {
-      return {
-        videos,
-        activeVideo: videos[0]
-      }
-    },
-    methods:{
-      chooseVideo(video){
-        //SET VIDEO AS ACTIVE VIDEO
-        this.activeVideo = video;
-        //INCREASE THE VIDEOS VIEWS BY 1
-        video.views += 1;
-      }
-    },
-    components: {
-      Timer
+import Timer from './timer.vue'
+export default {
+  name: 'VideoPlayer',
+  data () {
+    return {
+      videos,
+      activeVideo: videos[0]
     }
+  },
+  methods: {
+    chooseVideo (video) {
+      // SET VIDEO AS ACTIVE VIDEO
+      this.activeVideo = video
+      // INCREASE THE VIDEOS VIEWS BY 1
+      video.views += 1
+    }
+  },
+  components: {
+    Timer
   }
+}
 let videos = [
   {
     id: 1,
-    title: "18-core iMac Pro Review: Not a Trap!",
+    title: '18-core iMac Pro Review: Not a Trap!',
     thumbnail:
-      "https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA",
-    youtubeURL: "https://www.youtube.com/embed/3n1T3HxHd7Y?rel=0,&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y"
+      'https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA',
+    youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?rel=0,&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
   },
   {
     id: 2,
-    title: "18-core iMac Pro Review: Not a Trap!",
+    title: '18-core iMac Pro Review: Not a Trap!',
     thumbnail:
-      "https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA",
-    youtubeURL: "https://www.youtube.com/embed/i6pbI9niN4k?rel=0,&autoplay=1&mute=1&loop=1&playlist=i6pbI9niN4k"
-  },
-];
+      'https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA',
+    youtubeURL: 'https://www.youtube.com/embed/i6pbI9niN4k?rel=0,&autoplay=1&mute=1&loop=1&playlist=i6pbI9niN4k'
+  }
+]
 </script>
 <style scoped>
   body {
