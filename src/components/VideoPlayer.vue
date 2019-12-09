@@ -7,6 +7,8 @@
          <!-- Rise of Skywalker release date -->
         <!-- <timer date-props="December 20, 2019"></timer> -->
         <div class="video-container">
+          <!-- <video ref="videoPlayer" class="video-js"></video> -->
+          <!-- <vue-core-video-player src="../assets/rise-of-skywalker-1080p.mp4"></vue-core-video-player> -->
           <iframe width="1400" height="800" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay=yes; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -16,8 +18,28 @@
 
 <script>
 import Timer from './timer.vue'
+// import videojs from 'video.js'
+// import VueCoreVideoPlayer from 'vue-core-video-player'
 export default {
   name: 'VideoPlayer',
+  props: {
+    options: {
+      type: Object,
+      default () {
+        return {}
+      }
+    }
+  },
+  mounted () {
+    // this.player = videojs(this.$refs.videoPlayer, this.options, function onPlayerReady () {
+    //   console.log('onPlayerReady', this)
+    // })
+  },
+  beforeDestroy () {
+    if (this.player) {
+      this.player.dispose()
+    }
+  },
   data () {
     return {
       videos,
@@ -34,22 +56,20 @@ export default {
   },
   components: {
     Timer
+    // VueCoreVideoPlayer
   }
 }
 let videos = [
   {
     id: 1,
     title: '18-core iMac Pro Review: Not a Trap!',
-    thumbnail:
-      'https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA',
-    youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?rel=0,&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
-  },
-  {
-    id: 2,
-    title: '18-core iMac Pro Review: Not a Trap!',
-    thumbnail:
-      'https://i.ytimg.com/vi/jn9mHzXJIV0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAvJvk4k_UNB9nst4pFP-txM1TLZA',
-    youtubeURL: 'https://www.youtube.com/embed/i6pbI9niN4k?rel=0,&autoplay=1&mute=1&loop=1&playlist=i6pbI9niN4k'
+    // Rise of Skywalker trailer 2
+    // youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y
+    // Rise of Skywalker trailer 3
+    youtubeURL: 'https://www.youtube.com/embed/nlnrOr2STaE?start=7&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
+    // youtubeURL: '../assets/rise-of-skywalker-1080p.mp4'
+    // The Mandalorian trailer
+    // youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
   }
 ]
 </script>
@@ -60,7 +80,7 @@ let videos = [
   }
   .container {
       width: 100%;
-      background: url('../assets/img/disney.jpg') center center no-repeat;
+      background: url('../assets/img/sw2.jpg') center center no-repeat;
       background-size: cover;
       background-color: #190206;
       height: 100vh;
