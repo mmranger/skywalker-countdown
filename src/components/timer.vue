@@ -78,7 +78,7 @@
     }
 </style>
 <script>
-import moment from 'moment'
+// import moment from 'moment'
 export default{
   props: ['dateProps'],
   mounted: function () {
@@ -98,21 +98,7 @@ export default{
   },
   methods: {
     calculateCountdownDay () {
-      // Code to check that date and dayOfWeek are valid left as an exercise ;)
-      var dayOfWeek = 5 // Friday = 5
-      var date = new Date()
-      console.log('Date: ' + date)
-      var resultDate = new Date(date.getTime())
-      console.log('resultDate: ' + resultDate)
-      console.log('resultDate calculated: ' + moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD'))
-      console.log('resultDate calculated: ' + resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7))
-      var fridayDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD')
-      var fridayYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('YYYY')
-      // var fridayHour = moment(resultDate.setDate(date.getHours() + (24 + hourOfDay - date.getHours()) % 24)).format('HH:MM')
-
-      // return moment(resultDate).format('MMMM Do YYYY').toString()
-      // return resultDate
-      return fridayDate + ', ' + fridayYear + ' 3:00'
+      return 'February 2020'
     }
   },
 
