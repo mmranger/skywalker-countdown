@@ -69,7 +69,7 @@ let videos = [
     // youtubeURL: 'https://www.youtube.com/embed/nlnrOr2STaE?start=7&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
     // youtubeURL: '../assets/rise-of-skywalker-1080p.mp4'
     // The Mandalorian trailer
-    youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1'
+    youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=aOC8E8z_ifw'
   }
 ]
 </script>
