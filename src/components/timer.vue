@@ -98,16 +98,19 @@ export default{
   },
   methods: {
     calculateCountdownDay () {
+      // TODO: fix need hour calculated in to rotate otherwise on friday we get negative countdown.
       // Code to check that date and dayOfWeek are valid left as an exercise ;)
       var dayOfWeek = 5 // Friday = 5
       var date = new Date()
       console.log('Date: ' + date)
       var resultDate = new Date(date.getTime())
       console.log('resultDate: ' + resultDate)
+      console.log('with mod: ' + moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD'))
+      console.log('with out mod: ' + moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()))).format('MMMM DD'))
       console.log('resultDate calculated: ' + moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD'))
       console.log('resultDate calculated: ' + resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7))
-      var fridayDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD')
-      var fridayYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('YYYY')
+      var fridayDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()))).format('MMMM DD')
+      var fridayYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()))).format('YYYY')
       // var fridayHour = moment(resultDate.setDate(date.getHours() + (24 + hourOfDay - date.getHours()) % 24)).format('HH:MM')
 
       // return moment(resultDate).format('MMMM Do YYYY').toString()
