@@ -98,7 +98,6 @@ export default{
   },
   methods: {
     calculateCountdownDay () {
-      // TODO: fix need hour calculated in to rotate otherwise on friday we get negative countdown.
       // Code to check that date and dayOfWeek are valid left as an exercise ;)
       var dayOfWeek = 5 // Friday = 5
       var date = new Date()
