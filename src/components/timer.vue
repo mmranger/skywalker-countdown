@@ -78,6 +78,7 @@
     }
 </style>
 <script>
+// import moment from 'moment'
 export default{
   props: ['dateProps'],
   mounted: function () {
@@ -89,11 +90,15 @@ export default{
       )
     })
   },
-
   data () {
     return {
       current: Math.trunc((new Date()).getTime() / 1000),
-      date: Math.trunc(Date.parse(this.dateProps) / 1000)
+      date: Math.trunc(Date.parse(this.calculateCountdownDay()) / 1000)
+    }
+  },
+  methods: {
+    calculateCountdownDay () {
+      return 'February 2020'
     }
   },
 
