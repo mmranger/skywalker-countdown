@@ -2,13 +2,8 @@
   <div class="container">
     <div class="container-gradient">
       <div class="video-player">
-         <!-- The Mandalorian release date -->
-        <!-- <timer date-props={{ calculateCountdownDay() }}></timer> -->
-         <!-- Rise of Skywalker release date -->
         <timer></timer>
         <div class="video-container">
-          <!-- <video ref="videoPlayer" class="video-js"></video> -->
-          <!-- <vue-core-video-player src="../assets/rise-of-skywalker-1080p.mp4"></vue-core-video-player> -->
           <iframe width="1400" height="800" :src="this.activeVideo.youtubeURL" frameborder="0" allow="autoplay=yes; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -18,8 +13,6 @@
 
 <script>
 import Timer from './timer.vue'
-// import videojs from 'video.js'
-// import VueCoreVideoPlayer from 'vue-core-video-player'
 export default {
   name: 'VideoPlayer',
   props: {
@@ -31,9 +24,6 @@ export default {
     }
   },
   mounted () {
-    // this.player = videojs(this.$refs.videoPlayer, this.options, function onPlayerReady () {
-    //   console.log('onPlayerReady', this)
-    // })
   },
   beforeDestroy () {
     if (this.player) {
@@ -56,22 +46,14 @@ export default {
   },
   components: {
     Timer
-    // VueCoreVideoPlayer
   }
 }
 let videos = [
   {
     id: 1,
-    title: 'Star Wars: Clone Wars season 7',
-    // Rise of Skywalker trailer 2
-    // youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y
-    // Rise of Skywalker trailer 3
-    // youtubeURL: 'https://www.youtube.com/embed/nlnrOr2STaE?start=7&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
-    // youtubeURL: '../assets/rise-of-skywalker-1080p.mp4'
-    // The Mandalorian trailer
-    // youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=aOC8E8z_ifw'
-    // Star Wars Clone Wars season 7 trailer
-    youtubeURL: 'https://www.youtube.com/embed/B8tKum3cpnw?start=7&autoplay=1&mute=1&loop=1&playlist=B8tKum3cpnw'
+    title: 'New Mutants',
+    // New Mutants trailer
+    youtubeURL: 'https://www.youtube.com/embed/bu9e410C__I?start=4&autoplay=1&mute=1&loop=1&playlist=bu9e410C__I'
   }
 ]
 </script>
@@ -82,7 +64,7 @@ let videos = [
   }
   .container {
       width: 100%;
-      background: url('../assets/img/clone_wars.jpg') center center no-repeat;
+      background: url('../assets/img/new_mutants.jpg') center center no-repeat;
       background-size: cover;
       background-color: #190206;
       height: 100vh;

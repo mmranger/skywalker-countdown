@@ -98,7 +98,7 @@ export default{
   },
   methods: {
     calculateCountdownDay () {
-      return 'February 2020'
+      return 'April 3, 2020'
     }
   },
 
