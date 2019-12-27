@@ -100,19 +100,21 @@ export default{
     calculateCountdownDay () {
       // Code to check that date and dayOfWeek are valid left as an exercise ;)
       var dayOfWeek = 5 // Friday = 5
+      var hourOfDay = '3:00' // in military time?
       var date = new Date()
       var fridayDate
       var fridayYear
       console.log('Date: ' + date)
       var resultDate = new Date(date.getTime())
       console.log('resultDate: ' + resultDate)
+      console.log('GetDay(): ' + date.getDay())
       console.log('with mod: ' + moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD'))
       console.log('with out mod: ' + moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) / 7)).format('MMMM DD'))
       console.log('resultDate calculated: ' + moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD'))
       console.log('resultDate calculated: ' + resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7))
       if (date.getDay() === dayOfWeek) {
-        fridayDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) / 7)).format('MMMM DD')
-        fridayYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) / 7)).format('YYYY')
+        fridayDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7 + 7)).format('MMMM DD')
+        fridayYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7 + 7)).format('YYYY')
       } else {
         fridayDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD')
         fridayYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('YYYY')
@@ -121,7 +123,7 @@ export default{
 
       // return moment(resultDate).format('MMMM Do YYYY').toString()
       // return resultDate
-      return fridayDate + ', ' + fridayYear + ' 3:00'
+      return fridayDate + ', ' + fridayYear + ' ' + hourOfDay
     }
   },
 
