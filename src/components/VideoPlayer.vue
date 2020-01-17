@@ -53,7 +53,7 @@ let videos = [
     id: 1,
     title: 'New Mutants',
     // New Mutants trailer
-    youtubeURL: 'https://www.youtube.com/embed/bu9e410C__I?start=4&autoplay=1&mute=1&loop=1&playlist=bu9e410C__I'
+    youtubeURL: 'https://www.youtube.com/embed/W_vJhUAOFpI?start=4&autoplay=1&mute=1&loop=1&playlist=W_vJhUAOFpI'
   }
 ]
 </script>
