@@ -63,15 +63,7 @@ let videos = [
   {
     id: 1,
     title: 'Picard',
-    // Rise of Skywalker trailer 2
-    // youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y
-    // Rise of Skywalker trailer 3
-    // youtubeURL: 'https://www.youtube.com/embed/nlnrOr2STaE?start=7&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
-    // youtubeURL: '../assets/rise-of-skywalker-1080p.mp4'
-    // The Mandalorian trailer
-    // youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=aOC8E8z_ifw'
-    // Star Wars Clone Wars season 7 trailer 2:42 long 42000 120000
-    youtubeURL: 'https://www.youtube.com/embed/FySrgrKJguE?start=3&autoplay=1&mute=1&loop=1&playlist=FySrgrKJguE'
+    youtubeURL: 'https://www.youtube.com/embed/5np97mbMhcw?autoplay=1&mute=1&loop=1&playlist=5np97mbMhcw'
   }
 ]
 </script>
