@@ -98,11 +98,11 @@ export default{
   },
   methods: {
     calculateCountdownDay () { // Code to check that date and dayOfWeek are valid left as an exercise ;)
-      var dayOfWeek = 4 // Friday = 5
-      var hourOfDay = '2:01' // in military time?
+      var dayOfWeek = 7 // Friday = 5
+      var hourOfDay = '20:00' // in military time?
       var date = new Date()
-      var fridayDate
-      var fridayYear
+      var targetDate
+      var targetYear
       console.log('Date: ' + date)
       var resultDate = new Date(date.getTime())
       // console.log('resultDate: ' + resultDate)
@@ -112,19 +112,19 @@ export default{
       // console.log('resultDate calculated: ' + moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD'))
       // console.log('resultDate calculated: ' + resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7))
       if (date.getDay() === dayOfWeek) {
-        fridayDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7 + 7)).format('MMMM DD')
-        fridayYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7 + 7)).format('YYYY')
-        console.log('today is friday?')
+        targetDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7 + 7)).format('MMMM DD')
+        targetYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7 + 7)).format('YYYY')
+        console.log('today is target Day?')
       } else {
-        fridayDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD')
-        fridayYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('YYYY')
-        console.log('today is any day but friday?')
+        targetDate = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('MMMM DD')
+        targetYear = moment(resultDate.setDate(date.getDate() + (7 + dayOfWeek - date.getDay()) % 7)).format('YYYY')
+        console.log('today is any day but target day?')
       }
       // var fridayHour = moment(resultDate.setDate(date.getHours() + (24 + hourOfDay - date.getHours()) % 24)).format('HH:MM')
       // return moment(resultDate).format('MMMM Do YYYY').toString()
       // return resultDate
-      console.log(fridayDate + ', ' + fridayYear + ' ' + hourOfDay)
-      return fridayDate + ', ' + fridayYear + ' ' + hourOfDay
+      console.log(targetDate + ', ' + targetYear + ' ' + hourOfDay)
+      return targetDate + ', ' + targetYear + ' ' + hourOfDay
     }
   },
 

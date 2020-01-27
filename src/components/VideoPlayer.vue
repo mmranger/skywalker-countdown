@@ -62,8 +62,8 @@ export default {
 let videos = [
   {
     id: 1,
-    title: 'Picard',
-    youtubeURL: 'https://www.youtube.com/embed/5np97mbMhcw?autoplay=1&mute=1&loop=1&playlist=5np97mbMhcw'
+    title: 'Doctor Who Season 12',
+    youtubeURL: 'https://www.youtube.com/embed/vkEB0ysv7sM?autoplay=1&mute=1&loop=1&playlist=vkEB0ysv7sM'
   }
 ]
 </script>
@@ -74,7 +74,7 @@ let videos = [
   }
   .container {
       width: 100%;
-      background: url('../assets/img/picard-3.jpg') center center no-repeat;
+      background: url('../assets/img/dw.jpeg') center center no-repeat;
       background-size: cover;
       background-color: #190206;
       height: 100vh;
