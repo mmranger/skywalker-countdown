@@ -62,16 +62,8 @@ export default {
 let videos = [
   {
     id: 1,
-    title: 'Star Wars: Clone Wars season 7',
-    // Rise of Skywalker trailer 2
-    // youtubeURL: 'https://www.youtube.com/embed/3n1T3HxHd7Y?start=9&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y
-    // Rise of Skywalker trailer 3
-    // youtubeURL: 'https://www.youtube.com/embed/nlnrOr2STaE?start=7&autoplay=1&mute=1&loop=1&playlist=3n1T3HxHd7Y'
-    // youtubeURL: '../assets/rise-of-skywalker-1080p.mp4'
-    // The Mandalorian trailer
-    // youtubeURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1&loop=1&playlist=aOC8E8z_ifw'
-    // Star Wars Clone Wars season 7 trailer
-    youtubeURL: 'https://www.youtube.com/embed/B8tKum3cpnw?start=7&autoplay=1&mute=1&loop=1&playlist=B8tKum3cpnw'
+    title: 'Godzilla vs Kong',
+    youtubeURL: 'https://www.youtube.com/embed/msY80njA8Rg?start=1&autoplay=1&mute=1&loop=1&playlist=msY80njA8Rg'
   }
 ]
 </script>
@@ -82,7 +74,7 @@ let videos = [
   }
   .container {
       width: 100%;
-      background: url('../assets/img/clone_wars.jpg') center center no-repeat;
+      background: url('../assets/img/gvk.jpg') center center no-repeat;
       background-size: cover;
       background-color: #190206;
       height: 100vh;
