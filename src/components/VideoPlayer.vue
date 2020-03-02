@@ -63,7 +63,7 @@ let videos = [
   {
     id: 1,
     title: 'Godzilla vs Kong',
-    youtubeURL: 'https://www.youtube.com/embed/msY80njA8Rg?start=1&autoplay=1&mute=1&loop=1&playlist=msY80njA8Rg'
+    youtubeURL: 'https://www.youtube.com/embed/BIhNsAtPbPI?start=1&autoplay=1&mute=1&loop=1&playlist=BIhNsAtPbPI'
   }
 ]
 </script>
@@ -74,7 +74,7 @@ let videos = [
   }
   .container {
       width: 100%;
-      background: url('../assets/img/gvk.jpg') center center no-repeat;
+      background: url('../assets/img/007.jpg') center center no-repeat;
       background-size: cover;
       background-color: #190206;
       height: 100vh;
