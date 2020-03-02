@@ -62,7 +62,7 @@ export default {
 let videos = [
   {
     id: 1,
-    title: 'Godzilla vs Kong',
+    title: '007 No time to die',
     youtubeURL: 'https://www.youtube.com/embed/BIhNsAtPbPI?start=1&autoplay=1&mute=1&loop=1&playlist=BIhNsAtPbPI'
   }
 ]
