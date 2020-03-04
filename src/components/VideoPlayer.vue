@@ -63,7 +63,7 @@ let videos = [
   {
     id: 1,
     title: '007 No time to die',
-    youtubeURL: 'https://www.youtube.com/embed/BIhNsAtPbPI?start=1&autoplay=1&mute=1&loop=1&playlist=BIhNsAtPbPI'
+    youtubeURL: 'https://www.youtube.com/embed/RxAtuMu_ph4?start=2&autoplay=1&mute=1&loop=1&playlist=RxAtuMu_ph4'
   }
 ]
 </script>
@@ -74,7 +74,7 @@ let videos = [
   }
   .container {
       width: 100%;
-      background: url('../assets/img/007.jpg') center center no-repeat;
+      background: url('../assets/img/bw.jpg') center center no-repeat;
       background-size: cover;
       background-color: #190206;
       height: 100vh;
