@@ -63,7 +63,7 @@ let videos = [
   {
     id: 1,
     title: '007 No time to die',
-    youtubeURL: 'https://www.youtube.com/embed/RxAtuMu_ph4?start=2&autoplay=1&mute=1&loop=1&playlist=RxAtuMu_ph4'
+    youtubeURL: 'https://www.youtube.com/embed/ybji16u608U?start=2&autoplay=1&mute=1&loop=1&playlist=ybji16u608U'
   }
 ]
 </script>
