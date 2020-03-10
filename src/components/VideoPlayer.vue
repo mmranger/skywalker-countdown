@@ -53,7 +53,7 @@ let videos = [
     id: 1,
     title: 'New Mutants',
     // New Mutants trailer
-    youtubeURL: 'https://www.youtube.com/embed/W_vJhUAOFpI?start=4&autoplay=1&mute=1&loop=1&playlist=W_vJhUAOFpI'
+    youtubeURL: 'https://www.youtube.com/embed/A5pJyUYI85E?start=61&autoplay=1&mute=1&loop=1&playlist=A5pJyUYI85E'
   }
 ]
 </script>
@@ -64,7 +64,7 @@ let videos = [
   }
   .container {
       width: 100%;
-      background: url('../assets/img/new_mutants.jpg') center center no-repeat;
+      background: url('../assets/img/Mulan.jpg') center center no-repeat;
       background-size: cover;
       background-color: #190206;
       height: 100vh;
